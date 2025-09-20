@@ -25,7 +25,7 @@ class ArticleRequest(BaseModel):
     article_url: str
 
 # Get n8n webhook URL from environment variables
-N8N_WEBHOOK_URL = os.getenv("N8N_WEBHOOK_URL")
+N8N_WEBHOOK_URL = os.getenv("https://hamim125.app.n8n.cloud/webhook-test/9f995ff0-56fa-4d62-b1fe-13059c500fb3")
 
 @app.post("/submit-article")
 async def submit_article(request: ArticleRequest):
